@@ -22,21 +22,21 @@ django-admin startproject mysite .
 
 ## アプリケーション作成
 ```
-python3 manage.py startapp <アプリ名>
+python manage.py startapp <アプリ名>
 ```
 
 ## マイグレーション
 ```
-python3 manage.py makemigrations
-python3 manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
 ```
 
 ## サーバ起動
 ```
-python3 manage.py runserver
+python manage.py runserver
 ```
 
 ## スーパーユーザーの作成
 ```
-python3 manage.py createsuperuser
+python manage.py createsuperuser
 ```
