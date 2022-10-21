@@ -6,7 +6,7 @@ User = get_user_model()
 
 class Post(models.Model):
     # 記事ID(PRIMARY KEY)
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    id = models.CharField(primary_key=True, default=uuid.uuid4, editable=False, max_length=36)
     # 著者
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     # 記事タイトル
